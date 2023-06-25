@@ -8,7 +8,7 @@
         <li><a href='/about'>about</a></li>
         <li><a href='/experience'>experience</a></li>
         <li><a href='https://docs.google.com/document/d/1RvBvzJs4o3lVxu07kFWXLkd1WR5ryvmFKj_LSQCdoSM/edit?usp=sharing' target="_blank">resume</a></li>
-        <li><a href='/about'>projects</a></li>
+        <li><a href='/projects'>projects</a></li>
     </ul>
 </nav>
 <slot></slot>
