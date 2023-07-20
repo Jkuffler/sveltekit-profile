@@ -1,17 +1,16 @@
 <script>
-	import { elasticOut } from 'svelte/easing';
-	import { fade, fly, slide } from 'svelte/transition';
-
+	import { slide } from 'svelte/transition';
+	import { onMount } from 'svelte';
 	let showing = false;
+	onMount(() => {
+		showing=true;
+	})
+	
 </script>
-
-<label>
-	<input bind:checked={showing} type="checkbox" />
-</label>
 
 {#if showing}
 	<div>
-		<h1 transition:fade>Jason Kuffler</h1>
+		<h1 transition:slide>Jason Kuffler</h1>
 	</div>
 {/if}
 
