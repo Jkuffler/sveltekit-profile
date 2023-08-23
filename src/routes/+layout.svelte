@@ -18,11 +18,25 @@
 <slot />
 
 <style>
+	* {
+		background-color: black;
+	}
+	a {
+		color: darkorange;
+	}
+
+	a:visited {
+		color: tomato;
+	}
+	a:hover {
+		color: thistle;
+	}
 	nav,
 	ul {
 		display: flex;
 		list-style-type: none;
 		gap: 2em;
 		font-family: 'Courier New', Courier, monospace;
+		position: sticky;
 	}
 </style>
