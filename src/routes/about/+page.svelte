@@ -1,29 +1,44 @@
-<script></script>
+<script>
+	import { slide } from 'svelte/transition';
+	import { onMount } from 'svelte';
+</script>
 
 <section>
-	<h2>Highlights</h2>
-<ul>
-  <li><strong>Elementary School 1980s:</strong> Completed extra-curricular <a href='https://turtlespaces.org/docs/about-logo/'>Logo/turtleSpaces</a> course through public school's gifted and talented program</li>
-  <li><strong>Middle School 1990s:</strong> Learned WYSIWYG approach to HTML coding - primarily using tables for page layouts</li>
-  <li><strong>High School Late 98-2001:</strong> Gained proficiency in Microsoft Office Suite over Jr. and Sr. year as part of Honors Programming electives</li>
-  <li><strong><a href='https://flatironschool.com/'>Flatiron School</a> 2021:</strong> Rapidly learned and applied new paradigms in web development primarily through project-based learning and challenging labs: React, Ruby, Rails, Node, SQL, and more!</li>
-  <li><strong>May 2021 - Present day:</strong> Mentor with <a href='https://www.codethedream.org'>Code the Dream</a></li>
-</ul>
+	<h2>Me and Mr. Jasper Bellzak</h2>
+
+	<img src="src/routes/about/profile.png" alt="looks like me" />
+	<p>
+		Sharing my work with friends I haven't met yet | Finishing a degree in Comp Sci | Mentor at<a href="http://www.codethedream.org">codethedream.org</a>
+	</p>
 </section>
 
 <style>
-  ul {
-    list-style-type: none;
-    margin: 1em;
-    padding: 1em;
-  }
+	a {
+		color: darkorange;
+	}
 
-  li {
-    padding: .5em;
-  }
-h2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+	a:visited {
+		color: tomato;
+	}
+	a:hover {
+		color: thistle;
+	}
+	* {
+		background-color: black;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-family: 'Courier New', Courier, monospace;
+	}
+
+	img {
+		max-width: 100%;
+		height: 20em;
+	}
+
+	p {
+		color: blanchedalmond;
+		margin-left: 3em;
+		margin-right: 3em;
+	}
 </style>
